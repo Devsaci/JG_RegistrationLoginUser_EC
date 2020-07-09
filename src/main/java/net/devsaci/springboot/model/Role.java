@@ -24,6 +24,11 @@ public class Role {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+	public Role(String name) {
+		super();
+		this.name = name;
+	}
 	/**
 	 * @return the id
 	 */
