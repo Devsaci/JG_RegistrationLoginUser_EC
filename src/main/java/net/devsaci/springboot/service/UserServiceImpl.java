@@ -2,6 +2,7 @@ package net.devsaci.springboot.service;
 
 import java.util.Arrays;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import net.devsaci.springboot.model.Role;
@@ -12,16 +13,18 @@ import net.devsaci.springboot.web.dto.UserRegistrationDto;
 @Service
 public class UserServiceImpl implements UserService {
 
-	/*
-	 * @Autowired private UserRepository UserRepository;
-	 */
-
-	private UserRepository userRepository;
 	
-	public UserServiceImpl(UserRepository userRepository) {
-		super();
-		this.userRepository = userRepository;
-	}
+	/*
+	 * @Autowired private UserRepository userRepository;
+	 */
+	 
+
+	
+	  private UserRepository userRepository;
+	  
+	  public UserServiceImpl(UserRepository userRepository) { super();
+	  this.userRepository = userRepository; }
+	 
 
 	@Override
 	public User save(UserRegistrationDto registrationDto) {
