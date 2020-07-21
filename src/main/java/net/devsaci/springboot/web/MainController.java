@@ -9,9 +9,13 @@ public class MainController {
 	public String login() {
 		return "login";
 	}
-
-	/*
-	 * @GetMapping("/") public String home() { return "index"; }
+	/* Step 9 - Home PAge Implemenetation 
+	 * @
 	 */
+	
+	  @GetMapping("/") 
+	  public String home() { 
+		  return "index"; }
+	 
 	
 }
